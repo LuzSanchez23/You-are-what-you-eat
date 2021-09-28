@@ -1,0 +1,24 @@
+.flexbox-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-around;
+align-content: space-around;
+}
+.flexbox-item {
+    height: 250px;
+    width: 250px;
+    border: double darkturquoise 10px;
+}
+/*flexshrink is how much an item will shrin when being compressed*/
+.flexone {
+    flex-shrink: 0;
+}
+/*flexgrow is to fill white space, I want my box grown by this size*/
+.flextwo {
+    flex-grow: 2;
+}
+
+.flexthree {
+    flex-shrink: 0;
+}
