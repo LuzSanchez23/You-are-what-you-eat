@@ -1,0 +1,129 @@
+
+img {
+    height: 60px;
+}
+.nav-list {
+    background: chartreuse;
+    margin: 0;
+    padding: 10px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100px;
+}
+.nav-item {
+    list-style: none;
+    margin-right: 2rem;
+}
+.nav-item a {
+    text-decoration: none;
+    color: black;
+}
+.nav-item:first-child {
+margin-right: auto;
+margin-left: 2rem;
+flex-grow: 2;
+width: 100px;
+}
+
+/* Style the form - display items horizontally */
+.form-inline {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+  }
+  
+  /* Add some margins for each label PENDING*/
+  .form-inline label {
+    margin: 5px 10px 5px 0;
+  }
+  
+  /* Style the input fields */
+  .form-inline input {
+    vertical-align: middle;
+    margin: 5px 5px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  /* Style the submit button PENDING COLOR*/
+  .form-inline button {
+    padding: 10px 20px;
+    background-color: dodgerblue;
+    border: 1px solid #ddd;
+    color: white;
+  }
+  /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
+  @media (max-width: 800px) {
+    .form-inline input {
+      margin: 10px 0;
+    }
+  
+    .form-inline {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  }
+  .imgcontainer {
+    text-align: right;
+    margin: 24px 0 12px 0;
+  }
+  
+  img.avatar {
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  body {
+    background: #ccc;
+    font-family: 'Roboto', sans-serif;
+}
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    max-height: 100%;
+    margin: 25px auto;
+    padding: 25px;
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 25px;
+    background: #e2e2e2;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    order: 1;
+    display: none;
+}
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: #fff;
+}
+
+body {
+    background-image: linear-gradient(
+        to right, dodgerblue, darkblue);
+}
+
+.flexdos {
+    width: 200px;
+    height: 200px;
+    border-image: auto;
+    flex-flow:wrap;
+    text-align: right;
+}
