@@ -1,63 +1,60 @@
 
-img {
-    height: 60px;
+li {
+  color: rgb(223, 169, 98);
+  text-decoration: none;
+  list-style: none;
 }
-.nav-list {
-    background: chartreuse;
-    margin: 0;
-    padding: 10px;
-    display:flex;
-    justify-content: flex-end;
-    align-items: center;
-    height: 100px;
+header {
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding: 10px 10%;
+  box-sizing: border-box;
+  background-color: rgb(48, 38, 10);
+  font-weight: 500;
+  font-family: 'Carattere', cursive;
+  font-size: 60px;
 }
-.nav-item {
-    list-style: none;
-    margin-right: 2rem;
+.logo, .cart {
+  cursor:pointer;
+  size: 10px;
+  width: 100px;
+  height: 100px;
 }
-.nav-item a {
-    text-decoration: none;
-    color: black;
+body {
+  background-color: rgb(143, 109, 16);
 }
-.nav-item:first-child {
-margin-right: auto;
-margin-left: 2rem;
-flex-grow: 2;
-width: 100px;
+h3 {
+  text-align: center;
 }
 
-/* Style the form - display items horizontally */
 .form-inline {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    justify-content: center;
+    align-items:center;
   }
-  
-  /* Add some margins for each label PENDING*/
+
   .form-inline label {
-    margin: 5px 10px 5px 0;
+    margin: 10px 5px 5px;
   }
   
-  /* Style the input fields */
   .form-inline input {
     vertical-align: middle;
     margin: 5px 5px 5px 0;
-    padding: 10px;
+    padding: 5px;
     background-color: #fff;
-    border: 1px solid #ddd;
+    border: 1px solid black
   }
-  
-  /* Style the submit button PENDING COLOR*/
   .form-inline button {
-    padding: 10px 20px;
-    background-color: dodgerblue;
-    border: 1px solid #ddd;
+    padding: 10px 10px;
+    background-color: rgb(48, 38, 10);
+    border: 1px solid black;
     color: white;
   }
-  /* Add responsiveness - display the form controls vertically instead of horizontally on screens that are less than 800px wide */
-  @media (max-width: 800px) {
+  @media (max-width: 600px) {
     .form-inline input {
-      margin: 10px 0;
+      margin: 10px 00;
     }
   
     .form-inline {
@@ -66,64 +63,72 @@ width: 100px;
     }
   }
   .imgcontainer {
-    text-align: right;
-    margin: 24px 0 12px 0;
+    text-align: center;
+    margin: 10px 0 10px 0;
   }
   
   img.avatar {
-    width: 100%;
+    width: 30%;
     border-radius: 50%;
   }
 
-  body {
-    background: #ccc;
-    font-family: 'Roboto', sans-serif;
-}
+ 
 .mytabs {
     display: flex;
     flex-wrap: wrap;
     max-width: 100%;
     max-height: 100%;
-    margin: 25px auto;
-    padding: 25px;
+    margin: 5px auto;
+    padding: 5px;
 }
 .mytabs input[type="radio"] {
     display: none;
 }
 .mytabs label {
     padding: 25px;
-    background: #e2e2e2;
+    background: #d1d19c;
     font-weight: bold;
+    width: 100px;
 }
-
 .mytabs .tab {
     width: 100%;
     padding: 10px;
-    background: #fff;
+    background: rgb(109, 107, 90);
     order: 1;
     display: none;
 }
 .mytabs .tab h2 {
     font-size: 3em;
 }
-
 .mytabs input[type='radio']:checked + label + .tab {
     display: block;
 }
-
 .mytabs input[type="radio"]:checked + label {
     background: #fff;
 }
-
-body {
-    background-image: linear-gradient(
-        to right, dodgerblue, darkblue);
+.main {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+}
+.card {
+  margin: 0 auto; 
+  float: center;
+  text-align: center; 
+  margin-bottom: 10px; 
+}
+.col-md-5 {
+  float: inline-start;
+ text-align: center;
 }
 
+
 .flexdos {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
     border-image: auto;
-    flex-flow:wrap;
+    flex-flow: wrap;
     text-align: right;
+
 }
